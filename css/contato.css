@@ -1,0 +1,81 @@
+.contato{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.contato div{
+    width: 49%;
+}
+
+.contato p{
+    margin: 0%;
+    padding: 0.5% 0%;
+    font-size: 1em;
+}
+
+
+.icon{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon img{
+    margin-right: 2.5%;
+}
+
+h4{
+    margin: 0%;
+}
+
+.formulario{
+    width: 25%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.espaco, select{
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgb(204,204,204);
+    height: 35px;
+    border-width: 1px;
+    width: 100%;
+    margin: 4% 0%;
+}
+
+textarea{
+    border-radius: 6px;
+    border-style: solid;
+    border-color: rgb(204,204,204);
+    height: 30px;
+    border-width: 1px;
+    margin: 4% 0%;
+}
+
+input{
+    width: 20%;
+}
+
+/* responsivo*/
+
+@media (max-width: 768px){
+    .contato{
+        flex-direction: column;
+        margin: 5% auto;
+    }
+
+    .contato div{
+        margin: 5% 0%;
+        width: 100%;
+    }
+
+    .formulario{
+        width: 80%;
+    }
+}

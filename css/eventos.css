@@ -1,0 +1,28 @@
+.ftevento{
+    margin: 0%;
+}
+
+.ftevento p{
+    color: rgb(163, 163, 163);
+    font-size: 1em;
+    margin-bottom: 2.8%;
+    line-height: 150%;
+}
+
+.ftevento figure{
+    margin: 0%;
+    width: 75%;
+}
+
+.ftevento img{
+    width: 100%;
+}
+
+/*responsivo*/
+
+@media (max-width: 768px){
+    .ftevento figure{
+        margin: 5% auto;
+        width: 90%;
+    }
+}

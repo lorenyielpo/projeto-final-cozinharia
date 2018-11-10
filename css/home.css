@@ -1,0 +1,296 @@
+.banner{
+    background-image: url(../img/banner.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    padding: 13% 0% 13% 0%;
+}
+
+.banner:hover{
+    background-image: url(../img/cardapio-3.jpg);
+    background-size: 100%;
+    background-position-y: 70%;
+}
+
+.binfos{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 1.5%;
+    position: relative
+}
+
+.binfos p{
+    line-height: 1.4em;
+    margin: 0%;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 2.6em;
+    font-weight: 300;
+    margin: 0% 0% 2% 0%;
+}
+
+.binfos nav{
+    display: flex;
+    justify-content: flex-start;
+    width: 55%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.binfos a{
+    margin-right: 4%;
+    margin-top: 6%;
+    font-weight: 600;
+    width: 60%;
+}
+
+hr{
+    background-color: #F0DB48;
+    width: 20%;
+    height: 4px;
+    border: none;
+    margin: 0%;
+}
+
+.cozinharia{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 7% 0% 7% 0%;
+    margin: 0%;
+}
+
+.cozinha{
+    width: 37%;
+    margin-right: 3%;
+}
+
+.cozinharia img{
+    width: 45%;
+    height: 73%;
+}
+
+.cardapio{
+    background-color:#F0DB48;
+    height: 100%;
+    padding: 7% 0% 7% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+}
+
+.cardapio hr{
+    background-color: #141F45;
+    margin-bottom: 4.5%;
+    width: 8%;
+}
+
+.cardapio a{
+    margin-top: 2%;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.ftcardapio{
+    width: 80%;
+    margin: 0% 0% 2% 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ftcardapio figure{
+    width: 33.3%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ftcardapio img{
+    width: 100%;
+    margin: 0%;
+}
+
+.ftcardapio img:hover{
+    filter: sepia(10);
+}
+
+.ftcardapio figcaption{
+    background-color: white;
+    margin: 0%;
+    width: 93%;
+    padding: 3.5%;
+    color: #A3A3A3;
+    font-size: 1em;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0%;
+}
+
+span{
+    font-size: 0.8em;
+    background-color: white;
+    display: none;
+    margin: 4% 0% 2% 0%;
+}
+
+.active1{
+    display: block;
+}
+
+.eventos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 7% 0% 7% 0%;
+    margin: 0%;
+}
+
+.eventos div{
+    width: 40%;
+    height: 62%;
+    margin-left: 2.3%;
+}
+
+.eventos img{
+    width: 41%;
+    height: 66%;
+    margin: 0%;
+}
+
+.eventos p{
+    margin-top: 6.4%;
+}
+
+.eventos nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 56%;
+}
+
+/* responsivo*/
+  
+@media (max-width: 768px){
+    .banner{
+        height: 300px;
+        background-size: 160%;
+        align-items: flex-start;
+    }
+
+    .binfos{
+        width: 80%;
+        margin-top: 10%;
+    }
+
+    .binfos nav{
+        width: 80%;
+    }
+
+    .cozinharia{
+        flex-direction: column;
+    }
+
+    .cozinha{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+
+    .cozinharia img{
+        width: 80%;
+    }
+
+    .eventos{
+        flex-direction: column;
+    }
+
+    .eventos div{
+        width: 80%;
+    }
+
+    .eventos img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 425px){
+
+    .banner{
+        height: 250px;
+        background-size: 160%;
+        background-position-x: 20%;
+        align-items: flex-start;
+    }
+
+
+    .ftcardapio{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0% auto;
+        padding: 0%;
+        margin-bottom: 5%;
+    }
+
+    .ftcardapio figure{
+        width: 100%;
+    }
+
+    .ftcardapio img{
+        width: 100%;
+    }
+
+    .binfos p{
+        line-height: 2em;
+        margin: 0%;
+        font-size: 1em;
+    }
+
+    .binfos nav{
+        font-size: 0.8em;
+        width: 80%;
+    }
+
+    .eventos nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px){
+    .banner{
+        background-size: 150%;
+        background-position-x: 10%;
+    }
+
+    .binfos p{
+        line-height: 1em;
+        margin: 0%;
+        font-size: 1em;
+    }
+    
+    .binfos nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .binfos a{
+        margin: 2% 0%;
+    }
+
+}
